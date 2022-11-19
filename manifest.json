@@ -1,0 +1,13 @@
+{
+  "short_name": "Notes",
+  "name": "Notes App",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/ico"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone"
+}
