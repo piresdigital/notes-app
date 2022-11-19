@@ -1,0 +1,67 @@
+.Textbox_Container {
+    width: 50%;
+}
+
+.Textbox_Form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: solid 1px #a7a7a7;
+    background-color: goldenrod;
+    border-radius: 6px;
+    padding: 16px;
+    
+}
+
+.Textbox_Form > .Title {
+    font-size: large;
+    width: 100%;
+    padding: 6px;
+    margin: 8px;
+    background-color: #f3f3f3;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.Textbox_Form > .Description {
+    font-size: large;
+    width: 100%;
+    padding: 6px;
+    margin: 8px;
+    margin-bottom: 18px;
+    background-color: #f3f3f3;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.Textbox_Form > .Label {
+    align-self: flex-start;
+    color: #202124;
+}
+
+.Textbox_Form > .Submit {
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #276bb9;
+    font-weight: 649;
+    color: #f3f3f3;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .3s ease-out;
+}
+
+.Textbox_Form > .Submit-Null {
+    background-color: #848484;
+    cursor: not-allowed;
+    color: #f3f3f3;
+    transform: scale(0.8);
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 800px) {
+    .Textbox_Container { width: 100%; }
+}

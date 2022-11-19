@@ -1,0 +1,16 @@
+.Notes_Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .Notes_Container { 
+        width: 100%;
+        justify-content: center;
+    }
+}
