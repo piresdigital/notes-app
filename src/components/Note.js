@@ -1,7 +1,15 @@
-import React, { useState } from "react";
-import './css/Note.css'
+import React, { useState, useRef, useEffect } from "react";
+import './css/Note.css';
 
 export default function Note(props){
+    useEffect(() => {
+        if('ontouchstart' in document){
+            noteRef.current.classList.add('Mobile')
+        }
+
+    }, []);
+
+    const noteRef = useRef();
     
     // Note is a component denoting a single note.. and it is a child component of Notes component
 
@@ -22,7 +30,7 @@ export default function Note(props){
     }
 
     return(
-        <div className='Note_Modal' >
+        <div ref={ noteRef } className='Note_Modal' >
             <div className='Note'> 
                 <div className='Title'>{noteTitle}</div>
                 <div className='Description'>{noteDescription}</div>
